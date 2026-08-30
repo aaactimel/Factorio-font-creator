@@ -23,6 +23,10 @@
   --select-focus: #f1be64;
 }
 body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #161616 url(bg.png) repeat;
   margin: 0;
   font-family: "Titillium Web", sans-serif;
@@ -105,6 +109,7 @@ body {
 }
 .factorio-content {
   border-radius: 0 0 1px 1px;
+  margin: center;
   background: var(--factorio-light-panel);
   padding: 22px 24px 40px 24px;
   border-top: 1px solid #3b2d15;
@@ -516,23 +521,6 @@ textarea::placeholder {
 .copy-btn:focus .copy-flyout {
   opacity: 1;
   transform: translateY(0px) scale(1);
-}
-.footer {
-  margin-top: 350px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  text-align: center;
-  font-size: 10px;
-  color: #777;
-}
-.footer a {
-  color: var(--factorio-blue);
-  text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
 }
 @media (max-width: 700px) {
   .factorio-window {
