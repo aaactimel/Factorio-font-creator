@@ -49,7 +49,7 @@ const headerTitle = document.getElementById('header-title');
 const headerBy = document.getElementById('header-by');
 
 let selectedFont = fonts[3].name;
-let currentLang = 'ru';
+let currentLang = 'en';
 
 function renderFontDropdown() {
   fontDropdownList.innerHTML = '';
@@ -122,13 +122,13 @@ function copyCode() {
 
   setTimeout(() => {
     copyFlyout.classList.remove('shown');
-    copyBtn.style.background = 'var(--factorio-button)';
+    copyBtn.style.background = 'linear-gradient(180deg, #539e43 0%, #3a752e 100%)';
     copyBtn.style.color = '#fff';
-  }, 1100);
+  }, 2100);
 }
 
 function setLang(lang) {
-  const nextLang = translations[lang] ? lang : 'ru';
+  const nextLang = translations[lang] ? lang : 'en';
   const locale = translations[nextLang];
   currentLang = nextLang;
 
