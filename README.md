@@ -21,6 +21,6 @@ Same as [upstream repository](https://github.com/FCTostin-team/fonts-online_rich
 
 ## Fork differences
 - **Factorio-inspired UI** design
-- Minor **UI fixes**
-- Cleaned code
+- Minor **UI fixes**, including decluttering
+- Cleaned code; Deleted mostly unused languages
 - **No bs**!
