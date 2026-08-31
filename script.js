@@ -134,7 +134,7 @@ function setLang(lang) {
 
   langSelect.value = nextLang;
   headerTitle.textContent = locale.header;
-  headerBy.textContent = locale.by;
+  if (headerBy) headerBy.textContent = locale.by;
   labelText.textContent = locale.text;
   labelFont.textContent = locale.font;
   labelColor.textContent = locale.color;
@@ -143,14 +143,14 @@ function setLang(lang) {
   copyFlyout.textContent = locale.copied;
   textInput.placeholder = locale.placeholder;
 
-  if (nextLang === 'en' && (textInput.value === 'Пример текста' || textInput.value === 'Приклад тексту')) {
+  if (nextLang === 'en' && (textInput.value === 'Sample text' || textInput.value === 'Приклад тексту')) {
     textInput.value = 'Sample text';
   }
-  if (nextLang === 'uk' && (textInput.value === 'Пример текста' || textInput.value === 'Sample text')) {
+  if (nextLang === 'uk' && (textInput.value === 'Sample text' || textInput.value === 'Sample text')) {
     textInput.value = 'Приклад тексту';
   }
   if (nextLang === 'ru' && (textInput.value === 'Sample text' || textInput.value === 'Приклад тексту')) {
-    textInput.value = 'Пример текста';
+    textInput.value = 'Sample text';
   }
 
   updateCode();

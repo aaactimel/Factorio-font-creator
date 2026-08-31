@@ -524,13 +524,13 @@ textarea::placeholder {
 }
 @media (max-width: 700px) {
   .factorio-window {
-    max-width: 10px;
+    width: calc(100vw - 30px);
+    max-width: calc(100vw - 30px);
   }
   .font-thumb-drop img {
-    min-width: 10px;
-    max-width: 10px;
-    width: 98vw;
-    height: 42px;
+    width: 96%;
+    max-width: 100%;
+    height: auto;
   }
   .factorio-content {
     padding: 12px 2vw 16px 2vw;
@@ -538,10 +538,9 @@ textarea::placeholder {
 }
 @media (max-width: 600px) {
   .font-thumb-drop img {
-    min-width: 70px;
-    max-width: 99vw;
-    width: 95vw;
-    height: 36px;
+    width: 96%;
+    max-width: 100%;
+    height: auto;
   }
   .factorio-title-block {
     font-size: 1em;
